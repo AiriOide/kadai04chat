@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINEチャット風アプリ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- headタグ内に以下を追加 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<div id="chat-container">
+    <div id="output"></div>
+    <div id="input-area">
+        <input type="text" id="uname" placeholder="名前">
+        <textarea id="text" placeholder="メッセージを入力" rows="3"></textarea>
+        <button id="send">送信</button>
+        <select id="target-lang">
+            <option value="en">英語</option>
+            <option value="es">スペイン語</option>
+            <option value="fr">フランス語</option>
+            <option value="de">ドイツ語</option>
+        </select>
+        <button id="translate">翻訳</button>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+    import { getDatabase, ref, push, set, onChildAdded } 
+    from "https://www.gstatic.com/firebasejs/10.13.0/firebase-database.js";
+</script>
+<script type="module" src="js/script.js"></script>
+</body>
+</html>
